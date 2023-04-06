@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% if title %}
+  <title>{{ title }} - Routing Algorithms</title>
+  {% else %}
+  <title>Welcome to Our App</title>
+  {% endif %}
+</head>
+<body>
+  <div>Routing Algorithms: <a href="/index">Home</a></div>
+  <hr>
+  {% block content %}{% endblock %}
+</body>
+</html>
