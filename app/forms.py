@@ -1,9 +1,8 @@
 from flask_wtf import FlaskForm
 from wtforms import StringField, IntegerField, SubmitField
-from wtforms.validators import DataRequired
 
 class EdgeInputForm(FlaskForm):
-    vert1 = StringField('V1', validators=[DataRequired])
-    vert2 = StringField('V2', validators=[DataRequired])
-    weight = IntegerField('Weight', validators=[DataRequired])
+    vert1 = StringField('V1')
+    vert2 = StringField('V2')
+    weight = IntegerField('Weight')
     submit = SubmitField('Add edge')
